@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="0" vgap="0"
+		  styleClass="root"
+		  fx:controller="net.alcosmos.calc.controller.AboutController">
+	<padding>
+		<Insets bottom="0" left="0" right="0" top="0"/>
+	</padding>
+	
+	<GridPane fx:id="extraPane">
+		<ImageView GridPane.rowIndex="0" GridPane.columnIndex="0" onMouseClicked="#onEasterEgg">
+			<Image url="@../../../images/frames/extra/about.png"/>
+		</ImageView>
+		<VBox styleClass="aboutText" GridPane.rowIndex="0" GridPane.columnIndex="1">
+			<Text fx:id="easterEgg1" text="Created by Alcosmos 2021"/>
+			<Text fx:id="easterEgg2" text="Open source at GitHub"/>
+		</VBox>
+		<VBox styleClass="aboutText" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2">
+			<Text fx:id="easterEgg3" text="Functionality and design created"/>
+			<Text fx:id="easterEgg4" text="from scratch, inspired by 2001 Habbo"/>
+		</VBox>
+	</GridPane>
+</GridPane>

@@ -1,0 +1,11 @@
+#extraPane {
+    -fx-padding: 10px 0;
+    -fx-min-width: 206px;
+    -fx-width: 300px;
+    -fx-hgap: 16px;
+    -fx-vgap: 16px;
+    -fx-alignment: center;
+    -fx-background-color: #EFEFEF;
+    -fx-font-family: "Volter (Goldfish)";
+    -fx-font-size: 9;
+}

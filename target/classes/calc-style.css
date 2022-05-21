@@ -1,0 +1,115 @@
+#boxText {
+	-fx-min-width: 158px;
+}
+
+#boxGrid #boxTopCenter {
+	-fx-background-image: url("images/frames/box/box_top_center.png");
+}
+
+#boxGrid #boxMiddleLeft {
+	-fx-background-image: url("images/frames/box/box_middle_left.png");
+}
+
+#boxGrid #boxMiddleRight {
+	-fx-background-image: url("images/frames/box/box_middle_right.png");
+}
+
+#boxGrid #boxBottomCenter {
+	-fx-background-image: url("images/frames/box/box_bottom_center.png");
+}
+
+#infoBox {
+	-fx-alignment: center;
+}
+
+
+
+#numberButtons {
+	-fx-width: 100%;
+	-fx-color: black;
+	-fx-border-color: #999999;
+	-fx-background-color: #777777;
+}
+
+#deleteButton {
+	-fx-background-color: #DD0000;
+	-fx-border-color: #FF0000;
+	-fx-color: white;
+}
+
+#equalsButton {
+	-fx-background-color: #0000DD;
+	-fx-border-color: #0000FF;
+	-fx-color: white;
+}
+
+#calcGrid {
+	-fx-hgap: 4px;
+	-fx-vgap: 4px;
+	-fx-background-color: #EFEFEF;
+}
+
+#calcGrid .button {
+	-fx-min-width: 38px;
+	-fx-max-width: 38px;
+	-fx-min-height: 23px;
+	-fx-max-height: 23px;
+	-fx-background-color: transparent;
+	-fx-background-image: url("images/frames/button/small_thin.png");
+}
+
+#calcGrid .button:hover {
+	-fx-background-image: url("images/frames/button/small_thin_hover.png");
+}
+
+#calcGrid .button:pressed {
+	-fx-background-image: url("images/frames/button/small_thin_pressed.png");
+}
+
+#calcGrid .button.thick {
+	-fx-background-image: url("images/frames/button/small_thick.png");
+}
+
+#calcGrid .button.thick:hover {
+	-fx-background-image: url("images/frames/button/small_thick_hover.png");
+}
+
+#calcGrid .button.thick:pressed {
+	-fx-background-image: url("images/frames/button/small_thick_pressed.png");
+}
+
+#calcGrid .button.wide {
+	-fx-min-width: 80px;
+	-fx-max-width: 80px;
+	-fx-min-height: 23px;
+	-fx-max-height: 23px;
+	-fx-background-image: url("images/frames/button/big_thin.png");
+}
+
+#calcGrid .button.wide:hover {
+	-fx-background-image: url("images/frames/button/big_thin_hover.png");
+}
+
+#calcGrid .button.wide:pressed {
+	-fx-background-image: url("images/frames/button/big_thin_pressed.png");
+}
+
+#calcGrid .button.wideThick {
+	-fx-min-width: 80px;
+	-fx-max-width: 80px;
+	-fx-min-height: 23px;
+	-fx-max-height: 23px;
+	-fx-background-image: url("images/frames/button/big_thick.png");
+}
+
+#calcGrid .button.wideThick:hover {
+	-fx-background-image: url("images/frames/button/big_thick_hover.png");
+}
+
+#calcGrid .button.wideThick:pressed {
+	-fx-min-width: 80px;
+	-fx-max-width: 80px;
+	-fx-min-height: 23px;
+	-fx-max-height: 23px;
+	-fx-background-image: url("images/frames/button/big_thick_pressed.png");
+}

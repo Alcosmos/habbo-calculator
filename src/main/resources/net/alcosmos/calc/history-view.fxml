@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="0" vgap="0"
+		  styleClass="root"
+		  fx:controller="net.alcosmos.calc.controller.HistoryController">
+	<padding>
+		<Insets bottom="0" left="0" right="0" top="0"/>
+	</padding>
+	
+	<GridPane fx:id="extraPane">
+		<ImageView GridPane.rowIndex="0" GridPane.columnIndex="0">
+			<Image url="@../../../images/frames/extra/history.png"/>
+		</ImageView>
+		<VBox fx:id="history" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+	</GridPane>
+</GridPane>

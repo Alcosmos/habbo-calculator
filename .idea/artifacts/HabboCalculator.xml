@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="HabboCalculator">
+    <output-path>$PROJECT_DIR$/out/artifacts/HabboCalculator</output-path>
+    <root id="archive" name="HabboCalculator.jar">
+      <element id="module-output" name="Habbo Calculator" />
+    </root>
+  </artifact>
+</component>

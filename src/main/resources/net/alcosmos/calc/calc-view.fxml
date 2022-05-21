@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="0" vgap="0"
+		  styleClass="root"
+		  fx:controller="net.alcosmos.calc.controller.CalculatorController">
+	<padding>
+		<Insets bottom="0" left="0" right="0" top="0"/>
+	</padding>
+	
+	<GridPane id="calcGrid">
+		<GridPane id="boxGrid" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="5">
+			<ImageView GridPane.rowIndex="0" GridPane.columnIndex="0">
+				<Image url="@../../../images/frames/box/box_top_left.png"/>
+			</ImageView>
+			<HBox fx:id="boxTopCenter" HBox.hgrow="ALWAYS" prefWidth="5" maxWidth="Infinity" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+			<ImageView GridPane.rowIndex="0" GridPane.columnIndex="2">
+				<Image url="@../../../images/frames/box/box_top_right.png"/>
+			</ImageView>
+			
+			<HBox fx:id="boxMiddleLeft" HBox.hgrow="ALWAYS" prefWidth="5" maxWidth="Infinity" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+			<VBox fx:id="boxText" GridPane.rowIndex="1" GridPane.columnIndex="1">
+				<Text fx:id="boxTextTop"/>
+				<Text fx:id="boxTextBottom"/>
+			</VBox>
+			<HBox fx:id="boxMiddleRight" HBox.hgrow="ALWAYS" prefWidth="5" maxWidth="Infinity" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+			
+			<ImageView GridPane.rowIndex="2" GridPane.columnIndex="0">
+				<Image url="@../../../images/frames/box/box_bottom_left.png"/>
+			</ImageView>
+			<HBox fx:id="boxBottomCenter" HBox.hgrow="ALWAYS" prefWidth="5" maxWidth="Infinity" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+			<ImageView GridPane.rowIndex="2" GridPane.columnIndex="2">
+				<Image url="@../../../images/frames/box/box_bottom_right.png"/>
+			</ImageView>
+			
+			<Button text="Copy" GridPane.rowIndex="1" GridPane.columnIndex="3" focusTraversable="false" onAction="#copyResult"/>
+		</GridPane>
+		
+		<Button text="(" GridPane.rowIndex="2" GridPane.columnIndex="0" focusTraversable="false" onAction="#onButtonOpenClick"/>
+		<Button text=")" GridPane.rowIndex="2" GridPane.columnIndex="1" focusTraversable="false" onAction="#onButtonCloseClick"/>
+		
+		<Button text="7" GridPane.rowIndex="3" GridPane.columnIndex="0" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="8" GridPane.rowIndex="3" GridPane.columnIndex="1" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="9" GridPane.rowIndex="3" GridPane.columnIndex="2" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="4" GridPane.rowIndex="4" GridPane.columnIndex="0" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="5" GridPane.rowIndex="4" GridPane.columnIndex="1" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="6" GridPane.rowIndex="4" GridPane.columnIndex="2" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="1" GridPane.rowIndex="5" GridPane.columnIndex="0" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="2" GridPane.rowIndex="5" GridPane.columnIndex="1" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="3" GridPane.rowIndex="5" GridPane.columnIndex="2" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="." GridPane.rowIndex="6" GridPane.columnIndex="0" focusTraversable="false" onAction="#onButtonCommaClick"/>
+		<Button text="0" GridPane.rowIndex="6" GridPane.columnIndex="1" focusTraversable="false" onAction="#onButtonNumClick"/>
+		<Button text="=" GridPane.rowIndex="6" GridPane.columnIndex="2" focusTraversable="false" onAction="#onButtonEqualsClick" styleClass="thick"/>
+		
+		<HBox fx:id="infoBox" GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="3">
+			<Text text="By Alcosmos" styleClass="wide"/>
+		</HBox>
+		
+		<Button text="History" GridPane.rowIndex="2" GridPane.columnIndex="3" GridPane.columnSpan="2" focusTraversable="false" onAction="#openHistory" styleClass="wideThick"/>
+		<Button text="←" GridPane.rowIndex="3" GridPane.columnIndex="3" focusTraversable="false" onAction="#onButtonDeleteClick" styleClass="thick"/>
+		<Button text="C" GridPane.rowIndex="3" GridPane.columnIndex="4" focusTraversable="false" onAction="#onButtonClearClick" styleClass="thick"/>
+		<Button text="x" GridPane.rowIndex="4" GridPane.columnIndex="3" focusTraversable="false" onAction="#onButtonMultClick" styleClass="thick"/>
+		<Button text="+" GridPane.rowIndex="4" GridPane.columnIndex="4" focusTraversable="false" onAction="#onButtonPlusClick" styleClass="thick"/>
+		<Button text="/" GridPane.rowIndex="5" GridPane.columnIndex="3" focusTraversable="false" onAction="#onButtonDivClick" styleClass="thick"/>
+		<Button text="-" GridPane.rowIndex="5" GridPane.columnIndex="4" focusTraversable="false" onAction="#onButtonMinusClick" styleClass="thick"/>
+		<Button text="√" GridPane.rowIndex="6" GridPane.columnIndex="3" focusTraversable="false" onAction="#onButtonRootClick" styleClass="thick"/>
+		<Button text="^" GridPane.rowIndex="6" GridPane.columnIndex="4" focusTraversable="false" onAction="#onButtonPowerClick" styleClass="thick"/>
+		<Button text="About" GridPane.rowIndex="7" GridPane.columnIndex="3" focusTraversable="false" GridPane.columnSpan="2" onAction="#openAbout" styleClass="wide"/>
+	</GridPane>
+</GridPane>
