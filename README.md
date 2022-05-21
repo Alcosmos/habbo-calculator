@@ -6,11 +6,11 @@ Version 1.0.
 
 ![https://i.imgur.com/QT1lnSa.png](https://i.imgur.com/QT1lnSa.png)
 
-<ul>
-	<li>[Runnable for Linux](https://archive.alcosmos.net/Alcosmos/Git/habbo_calculator/binaries/HabboCalculator-Linux.zip)</li>
-	<li>[Runnable for Windows](https://archive.alcosmos.net/Alcosmos/Git/habbo_calculator/binaries/HabboCalculator-Windows.zip)</li>
-	<li>[Java JAR](https://archive.alcosmos.net/Alcosmos/Git/habbo_calculator/binaries/HabboCalculator-1.0.jar)</li>
-</ul>
+[Runnable for Linux](https://archive.alcosmos.net/Alcosmos/Git/habbo_calculator/binaries/HabboCalculator-Linux.zip)
+
+[Runnable for Windows](https://archive.alcosmos.net/Alcosmos/Git/habbo_calculator/binaries/HabboCalculator-Windows.zip)
+
+[Java JAR](https://archive.alcosmos.net/Alcosmos/Git/habbo_calculator/binaries/HabboCalculator-1.0.jar)
 
 'HabboCalculator.exe' for Windows, and 'HabboCalculator.sh' for Linux.
 Both the Windows executable and Linux script make use of the included JAR by using the bundled JDKs located under the 'jdk' directory. No external Java install is required.
